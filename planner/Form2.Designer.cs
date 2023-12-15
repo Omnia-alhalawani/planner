@@ -135,7 +135,7 @@
             this.label_Month.Font = new System.Drawing.Font("Brush Script MT", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Month.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label_Month.Location = new System.Drawing.Point(495, 10);
-            this.label_Month.Name = "label_Jan";
+            this.label_Month.Name = "label_Month";
             this.label_Month.Size = new System.Drawing.Size(200, 60);
             this.label_Month.TabIndex = 0;
             this.label_Month.Text = "January";
@@ -390,5 +390,6 @@
         private System.Windows.Forms.Label label_notes;
         private System.Windows.Forms.TextBox notes;
         private System.Windows.Forms.Button back_btn;
+        private RoundLabel label_Month;
     }
 }
