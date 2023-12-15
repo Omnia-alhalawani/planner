@@ -81,6 +81,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label_Month = new planner.RoundLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.back_btn = new System.Windows.Forms.Button();
             this.label_notes = new System.Windows.Forms.Label();
