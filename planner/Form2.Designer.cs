@@ -1,5 +1,58 @@
 ﻿namespace planner
 {
+     public class RoundLabel : Label
+    {
+        Color customBackColor = Color.Gray;
+        Color customTextColor = Color.WhiteSmoke;
+        public Color CustomBC
+        {
+            get { return customBackColor; }
+            set
+            {
+                customBackColor = value;
+                Invalidate();
+            }
+        }
+        public Color CustomTC
+        {
+            get { return customTextColor; }
+            set
+            {
+                customTextColor = value;
+                Invalidate(); //to redo label when color changes
+            }
+        }
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+            GraphicsPath path = new GraphicsPath();
+            int r = 10;
+
+            path.AddArc(0, 0, r, r, 180, 90);
+            path.AddArc(this.Width - r, 0, r, r, 270, 90);
+            path.AddArc(this.Width - r, this.Height - r, r, r, 0, 90);
+            path.AddArc(0, this.Height - r, r, r, 90, 90);
+            path.CloseFigure();
+
+            using (SolidBrush brush = new SolidBrush(customBackColor))
+            {
+                e.Graphics.FillPath(brush, path);
+            }
+
+            StringFormat sf = new StringFormat();
+            sf.Alignment = StringAlignment.Center;
+            sf.LineAlignment = StringAlignment.Center;
+
+            using (SolidBrush tb = new SolidBrush(this.ForeColor))
+            {
+                e.Graphics.DrawString(this.Text, this.Font, tb, ClientRectangle, sf);
+            }
+            using (SolidBrush textBrush = new SolidBrush(customTextColor))
+            {
+                e.Graphics.DrawString(this.Text, this.Font, textBrush, ClientRectangle, sf);
+            }
+        }
+    }
     partial class Form2
     {
         /// <summary>
@@ -73,6 +126,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1342, 709);
             this.panel1.TabIndex = 1;
+            // 
+            // label_Month
+            // 
+            this.label_Month.BackColor = System.Drawing.Color.Transparent;
+            this.label_Month.CustomBC = System.Drawing.Color.Pink;
+            this.label_Month.CustomTC = System.Drawing.Color.White;
+            this.label_Month.Font = new System.Drawing.Font("Brush Script MT", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Month.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label_Month.Location = new System.Drawing.Point(495, 10);
+            this.label_Month.Name = "label_Jan";
+            this.label_Month.Size = new System.Drawing.Size(200, 60);
+            this.label_Month.TabIndex = 0;
+            this.label_Month.Text = "January";
+            this.label_Month.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // back_btn
             // 
