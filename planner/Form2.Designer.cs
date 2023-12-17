@@ -130,6 +130,7 @@
             // 
             // label_Month
             // 
+            this.panel1.Controls.Add(this.label_Month);
             this.label_Month.BackColor = System.Drawing.Color.Transparent;
             this.label_Month.CustomBC = System.Drawing.Color.Pink;
             this.label_Month.CustomTC = System.Drawing.Color.White;
