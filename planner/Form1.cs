@@ -138,7 +138,7 @@ namespace planner
         private void timer1_Tick(object sender, EventArgs e)
         {
             TimeSpan elapsed = m.Elapsed;
-            label1.Text = $" {elapsed.ToString(@"hh\:mm\:ss")}";
+            label2.Text = $" {elapsed.ToString(@"hh\:mm\:ss")}";
         }
 
         private void start_Click(object sender, EventArgs e)
@@ -149,6 +149,11 @@ namespace planner
         private void stop_Click(object sender, EventArgs e)
         {
             m.Stop();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

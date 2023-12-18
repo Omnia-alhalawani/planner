@@ -46,6 +46,7 @@
             this.start = new System.Windows.Forms.Button();
             this.stop = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Jan
@@ -214,6 +215,15 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(695, 300);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(187, 28);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "label2";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -221,6 +231,7 @@
             this.BackgroundImage = global::planner.Properties.Resources.john_towner_JgOeRuGD_Y4_unsplash;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(992, 562);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.stop);
             this.Controls.Add(this.start);
             this.Controls.Add(this.dateTimePicker1);
@@ -263,6 +274,7 @@
         private System.Windows.Forms.Button start;
         private System.Windows.Forms.Button stop;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
