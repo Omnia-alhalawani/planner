@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Jan = new System.Windows.Forms.Button();
             this.Feb = new System.Windows.Forms.Button();
             this.Mar = new System.Windows.Forms.Button();
@@ -41,11 +42,16 @@
             this.Nov = new System.Windows.Forms.Button();
             this.Dec = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.start = new System.Windows.Forms.Button();
+            this.stop = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // Jan
             // 
-            this.Jan.Location = new System.Drawing.Point(35, 119);
+            this.Jan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Jan.Location = new System.Drawing.Point(35, 168);
             this.Jan.Name = "Jan";
             this.Jan.Size = new System.Drawing.Size(101, 49);
             this.Jan.TabIndex = 2;
@@ -55,18 +61,17 @@
             // 
             // Feb
             // 
-            this.Feb.Location = new System.Drawing.Point(273, 119);
+            this.Feb.Location = new System.Drawing.Point(177, 168);
             this.Feb.Name = "Feb";
             this.Feb.Size = new System.Drawing.Size(101, 49);
             this.Feb.TabIndex = 3;
             this.Feb.Text = "Feb";
             this.Feb.UseVisualStyleBackColor = true;
             this.Feb.Click += new System.EventHandler(this.Feb_Click);
-
             // 
             // Mar
             // 
-            this.Mar.Location = new System.Drawing.Point(525, 119);
+            this.Mar.Location = new System.Drawing.Point(313, 168);
             this.Mar.Name = "Mar";
             this.Mar.Size = new System.Drawing.Size(101, 49);
             this.Mar.TabIndex = 4;
@@ -76,14 +81,13 @@
             // 
             // Apr
             // 
-            this.Apr.Location = new System.Drawing.Point(797, 119);
+            this.Apr.Location = new System.Drawing.Point(472, 168);
             this.Apr.Name = "Apr";
             this.Apr.Size = new System.Drawing.Size(101, 49);
             this.Apr.TabIndex = 5;
             this.Apr.Text = "Apr";
             this.Apr.UseVisualStyleBackColor = true;
             this.Apr.Click += new System.EventHandler(this.Apr_Click);
-
             // 
             // May
             // 
@@ -97,7 +101,7 @@
             // 
             // Jun
             // 
-            this.Jun.Location = new System.Drawing.Point(273, 254);
+            this.Jun.Location = new System.Drawing.Point(177, 254);
             this.Jun.Name = "Jun";
             this.Jun.Size = new System.Drawing.Size(101, 49);
             this.Jun.TabIndex = 7;
@@ -107,7 +111,7 @@
             // 
             // Jul
             // 
-            this.Jul.Location = new System.Drawing.Point(525, 254);
+            this.Jul.Location = new System.Drawing.Point(313, 254);
             this.Jul.Name = "Jul";
             this.Jul.Size = new System.Drawing.Size(101, 49);
             this.Jul.TabIndex = 8;
@@ -117,7 +121,7 @@
             // 
             // Aug
             // 
-            this.Aug.Location = new System.Drawing.Point(797, 279);
+            this.Aug.Location = new System.Drawing.Point(472, 254);
             this.Aug.Name = "Aug";
             this.Aug.Size = new System.Drawing.Size(101, 49);
             this.Aug.TabIndex = 9;
@@ -127,7 +131,7 @@
             // 
             // Sep
             // 
-            this.Sep.Location = new System.Drawing.Point(35, 417);
+            this.Sep.Location = new System.Drawing.Point(35, 339);
             this.Sep.Name = "Sep";
             this.Sep.Size = new System.Drawing.Size(101, 49);
             this.Sep.TabIndex = 10;
@@ -137,7 +141,7 @@
             // 
             // Oct
             // 
-            this.Oct.Location = new System.Drawing.Point(273, 408);
+            this.Oct.Location = new System.Drawing.Point(177, 339);
             this.Oct.Name = "Oct";
             this.Oct.Size = new System.Drawing.Size(101, 49);
             this.Oct.TabIndex = 11;
@@ -147,39 +151,79 @@
             // 
             // Nov
             // 
-            this.Nov.Location = new System.Drawing.Point(525, 408);
+            this.Nov.Location = new System.Drawing.Point(313, 339);
             this.Nov.Name = "Nov";
             this.Nov.Size = new System.Drawing.Size(101, 49);
             this.Nov.TabIndex = 12;
             this.Nov.Text = "Nov";
             this.Nov.UseVisualStyleBackColor = true;
-            this.Nov .Click += new System.EventHandler(this.Nov_Click);
+            this.Nov.Click += new System.EventHandler(this.Nov_Click);
             // 
             // Dec
             // 
-            this.Dec.Location = new System.Drawing.Point(797, 408);
+            this.Dec.Location = new System.Drawing.Point(472, 339);
             this.Dec.Name = "Dec";
             this.Dec.Size = new System.Drawing.Size(101, 49);
             this.Dec.TabIndex = 13;
             this.Dec.Text = "Dec";
             this.Dec.UseVisualStyleBackColor = true;
-            this.Dec .Click += new System.EventHandler(this.Dec_Click);
+            this.Dec.Click += new System.EventHandler(this.Dec_Click);
             // 
             // label1
             // 
+            this.label1.BackColor = System.Drawing.Color.Gainsboro;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Location = new System.Drawing.Point(364, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(186, 58);
             this.label1.TabIndex = 14;
             this.label1.Text = "year 2024";
-          
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.InactiveCaption;
+            this.dateTimePicker1.Location = new System.Drawing.Point(696, 67);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.TabIndex = 15;
+            // 
+            // start
+            // 
+            this.start.Location = new System.Drawing.Point(698, 348);
+            this.start.Name = "start";
+            this.start.Size = new System.Drawing.Size(75, 23);
+            this.start.TabIndex = 16;
+            this.start.Text = "start";
+            this.start.UseVisualStyleBackColor = true;
+            this.start.Click += new System.EventHandler(this.start_Click);
+            // 
+            // stop
+            // 
+            this.stop.Location = new System.Drawing.Point(807, 348);
+            this.stop.Name = "stop";
+            this.stop.Size = new System.Drawing.Size(75, 23);
+            this.stop.TabIndex = 17;
+            this.stop.Text = "stop";
+            this.stop.UseVisualStyleBackColor = true;
+            this.stop.Click += new System.EventHandler(this.stop_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::planner.Properties.Resources.john_towner_JgOeRuGD_Y4_unsplash;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(992, 562);
+            this.Controls.Add(this.stop);
+            this.Controls.Add(this.start);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Dec);
             this.Controls.Add(this.Nov);
@@ -195,6 +239,7 @@
             this.Controls.Add(this.Jan);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load_1);
             this.ResumeLayout(false);
 
         }
@@ -214,6 +259,10 @@
         private System.Windows.Forms.Button Nov;
         private System.Windows.Forms.Button Dec;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button start;
+        private System.Windows.Forms.Button stop;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

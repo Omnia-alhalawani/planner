@@ -17,6 +17,16 @@ namespace planner
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+
+
+            ////new 
+          //  for (int i = 0; i < 11; i++)
+           // {
+              //  Application.Run(new Form2());
+
+           // }
+           
+
         }
     }
 }
