@@ -110,5 +110,8 @@
   <ItemGroup>
     <None Include="Resources\glen-carrie-N8MDgWvUW-8-unsplash.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image prject.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

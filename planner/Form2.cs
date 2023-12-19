@@ -93,7 +93,7 @@ namespace planner
                 {
 
                     MessageBox.Show("اشطر كتكوت");
-                    listBox6.Items.Add(listBox2.SelectedItem);
+                    listBox5.Items.Add(listBox2.SelectedItem);
                     listBox2.Items.Remove(listBox2.SelectedItem);
                 }
                 else
@@ -167,7 +167,7 @@ namespace planner
                 {
 
                     MessageBox.Show("اشطر كتكوت");
-                    listBox6.Items.Add(listBox4.SelectedItem);
+                    listBox8.Items.Add(listBox4.SelectedItem);
                     listBox4.Items.Remove(listBox4.SelectedItem);
                 }
                 else

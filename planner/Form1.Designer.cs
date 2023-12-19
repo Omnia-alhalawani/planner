@@ -52,7 +52,7 @@
             // Jan
             // 
             this.Jan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Jan.Location = new System.Drawing.Point(35, 168);
+            this.Jan.Location = new System.Drawing.Point(76, 168);
             this.Jan.Name = "Jan";
             this.Jan.Size = new System.Drawing.Size(101, 49);
             this.Jan.TabIndex = 2;
@@ -62,7 +62,7 @@
             // 
             // Feb
             // 
-            this.Feb.Location = new System.Drawing.Point(177, 168);
+            this.Feb.Location = new System.Drawing.Point(223, 168);
             this.Feb.Name = "Feb";
             this.Feb.Size = new System.Drawing.Size(101, 49);
             this.Feb.TabIndex = 3;
@@ -72,7 +72,7 @@
             // 
             // Mar
             // 
-            this.Mar.Location = new System.Drawing.Point(313, 168);
+            this.Mar.Location = new System.Drawing.Point(395, 168);
             this.Mar.Name = "Mar";
             this.Mar.Size = new System.Drawing.Size(101, 49);
             this.Mar.TabIndex = 4;
@@ -82,7 +82,7 @@
             // 
             // Apr
             // 
-            this.Apr.Location = new System.Drawing.Point(472, 168);
+            this.Apr.Location = new System.Drawing.Point(545, 168);
             this.Apr.Name = "Apr";
             this.Apr.Size = new System.Drawing.Size(101, 49);
             this.Apr.TabIndex = 5;
@@ -92,7 +92,7 @@
             // 
             // May
             // 
-            this.May.Location = new System.Drawing.Point(35, 254);
+            this.May.Location = new System.Drawing.Point(76, 254);
             this.May.Name = "May";
             this.May.Size = new System.Drawing.Size(101, 49);
             this.May.TabIndex = 6;
@@ -102,7 +102,7 @@
             // 
             // Jun
             // 
-            this.Jun.Location = new System.Drawing.Point(177, 254);
+            this.Jun.Location = new System.Drawing.Point(223, 254);
             this.Jun.Name = "Jun";
             this.Jun.Size = new System.Drawing.Size(101, 49);
             this.Jun.TabIndex = 7;
@@ -112,7 +112,7 @@
             // 
             // Jul
             // 
-            this.Jul.Location = new System.Drawing.Point(313, 254);
+            this.Jul.Location = new System.Drawing.Point(395, 254);
             this.Jul.Name = "Jul";
             this.Jul.Size = new System.Drawing.Size(101, 49);
             this.Jul.TabIndex = 8;
@@ -122,7 +122,7 @@
             // 
             // Aug
             // 
-            this.Aug.Location = new System.Drawing.Point(472, 254);
+            this.Aug.Location = new System.Drawing.Point(545, 244);
             this.Aug.Name = "Aug";
             this.Aug.Size = new System.Drawing.Size(101, 49);
             this.Aug.TabIndex = 9;
@@ -132,7 +132,7 @@
             // 
             // Sep
             // 
-            this.Sep.Location = new System.Drawing.Point(35, 339);
+            this.Sep.Location = new System.Drawing.Point(76, 335);
             this.Sep.Name = "Sep";
             this.Sep.Size = new System.Drawing.Size(101, 49);
             this.Sep.TabIndex = 10;
@@ -142,7 +142,7 @@
             // 
             // Oct
             // 
-            this.Oct.Location = new System.Drawing.Point(177, 339);
+            this.Oct.Location = new System.Drawing.Point(223, 335);
             this.Oct.Name = "Oct";
             this.Oct.Size = new System.Drawing.Size(101, 49);
             this.Oct.TabIndex = 11;
@@ -152,7 +152,7 @@
             // 
             // Nov
             // 
-            this.Nov.Location = new System.Drawing.Point(313, 339);
+            this.Nov.Location = new System.Drawing.Point(395, 335);
             this.Nov.Name = "Nov";
             this.Nov.Size = new System.Drawing.Size(101, 49);
             this.Nov.TabIndex = 12;
@@ -162,7 +162,7 @@
             // 
             // Dec
             // 
-            this.Dec.Location = new System.Drawing.Point(472, 339);
+            this.Dec.Location = new System.Drawing.Point(545, 335);
             this.Dec.Name = "Dec";
             this.Dec.Size = new System.Drawing.Size(101, 49);
             this.Dec.TabIndex = 13;
@@ -175,7 +175,7 @@
             this.label1.BackColor = System.Drawing.Color.Gainsboro;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(364, 31);
+            this.label1.Location = new System.Drawing.Point(373, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(186, 58);
             this.label1.TabIndex = 14;
@@ -184,7 +184,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.InactiveCaption;
-            this.dateTimePicker1.Location = new System.Drawing.Point(696, 67);
+            this.dateTimePicker1.Location = new System.Drawing.Point(682, 115);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
             this.dateTimePicker1.TabIndex = 15;
@@ -228,9 +228,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::planner.Properties.Resources.john_towner_JgOeRuGD_Y4_unsplash;
+            this.BackgroundImage = global::planner.Properties.Resources.image_prject;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(992, 562);
+            this.ClientSize = new System.Drawing.Size(1014, 570);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.stop);
             this.Controls.Add(this.start);

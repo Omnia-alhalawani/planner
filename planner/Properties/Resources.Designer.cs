@@ -83,6 +83,16 @@ namespace planner.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap image_prject {
+            get {
+                object obj = ResourceManager.GetObject("image prject", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap john_towner_JgOeRuGD_Y4_unsplash {
             get {
                 object obj = ResourceManager.GetObject("john-towner-JgOeRuGD_Y4-unsplash", resourceCulture);
