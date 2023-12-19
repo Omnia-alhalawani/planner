@@ -27,101 +27,91 @@ namespace planner
         
         }
 
-        private void button1_Click(object sender, EventArgs e)//to form 2
-        {
-              this.Hide();
-            //Form2 form2 = new Form2();
-            //form2.Show();
-            Form2 jan=new Form2();
-            jan.ShowDialog();
-
-        }
-
         private void Jan_Click(object sender, EventArgs e)//to form 2
         {
              this.Hide();
             // Form2 form2 = new Form2();
             //form2.Show();
-            Form2 jan = new Form2();
-            jan.ShowDialog();
+            Form2 formjan = new Form2("January");
+            formjan.ShowDialog();
         }
 
         private void Feb_Click(object sender, EventArgs e)
         {
             this.Hide();
             
-            Form2 jan = new Form2();
-            jan.ShowDialog();
+            Form2 formfeb = new Form2("February");
+            formfeb.ShowDialog();
            
         }
 
         private void Mar_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 formmar = new Form2();
+            Form2 formmar = new Form2("March");
             formmar.Show();
         }
 
         private void Apr_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 formapr = new Form2();
+            Form2 formapr = new Form2("April");
             formapr.Show();
         }
 
         private void May_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 formmay = new Form2();
+            Form2 formmay = new Form2("May");
             formmay.Show();
         }
 
         private void Jun_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 formjune = new Form2();
+            Form2 formjune = new Form2("June");
             formjune.Show();
         }
 
         private void Jul_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 formjul = new Form2();
+            Form2 formjul = new Form2("July");
             formjul.Show();
         }
 
         private void Aug_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 formaug = new Form2();
+            Form2 formaug = new Form2("August");
             formaug.Show();
         }
 
         private void Sep_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 formsep = new Form2();
+            Form2 formsep = new Form2("September");
             formsep.Show();
         }
 
         private void Oct_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 formoct = new Form2();
+            Form2 formoct = new Form2("October");
             formoct.Show();
         }
 
         private void Nov_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 formnov = new Form2();
+            Form2 formnov = new Form2("Novemeber");
             formnov.Show();
         }
 
         private void Dec_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 formdec = new Form2();
+            Form2 formdec = new Form2("December");
             formdec.Show();
         }
 
@@ -149,11 +139,6 @@ namespace planner
         private void stop_Click(object sender, EventArgs e)
         {
             m.Stop();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

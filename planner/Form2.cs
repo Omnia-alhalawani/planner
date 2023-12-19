@@ -12,9 +12,23 @@ namespace planner
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        RoundLabel label_month = new RoundLabel();
+        public Form2(string month)
         {
             InitializeComponent();
+
+            panel1.Controls.Add(label_month);
+            label_month.BackColor = Color.Transparent;
+            label_month.CustomBC = Color.LightGray;
+            label_month.CustomTC = Color.DimGray;
+            label_month.Font = new Font("Microsoft Sans Serif", 24F, ((FontStyle)((FontStyle.Bold | FontStyle.Italic))), GraphicsUnit.Point, ((byte)(0)));
+            label_month.ForeColor = Color.WhiteSmoke;
+            label_month.Location = new Point(415, 10);
+            label_month.Name = "label_jan";
+            label_month.Size = new Size(200, 60);
+            label_month.TabIndex = 0;
+            label_month.Text = month;
+            label_month.TextAlign = ContentAlignment.MiddleCenter;
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -213,6 +227,11 @@ namespace planner
         }
 
         private void listBox8_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void week4_Enter(object sender, EventArgs e)
         {
 
         }

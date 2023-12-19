@@ -41,7 +41,7 @@
             this.Oct = new System.Windows.Forms.Button();
             this.Nov = new System.Windows.Forms.Button();
             this.Dec = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label1 = new planner.RoundLabel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.start = new System.Windows.Forms.Button();
             this.stop = new System.Windows.Forms.Button();
@@ -52,9 +52,10 @@
             // Jan
             // 
             this.Jan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Jan.Location = new System.Drawing.Point(76, 168);
+            this.Jan.Location = new System.Drawing.Point(86, 210);
+            this.Jan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Jan.Name = "Jan";
-            this.Jan.Size = new System.Drawing.Size(101, 49);
+            this.Jan.Size = new System.Drawing.Size(114, 61);
             this.Jan.TabIndex = 2;
             this.Jan.Text = "Jan";
             this.Jan.UseVisualStyleBackColor = true;
@@ -62,9 +63,10 @@
             // 
             // Feb
             // 
-            this.Feb.Location = new System.Drawing.Point(223, 168);
+            this.Feb.Location = new System.Drawing.Point(251, 210);
+            this.Feb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Feb.Name = "Feb";
-            this.Feb.Size = new System.Drawing.Size(101, 49);
+            this.Feb.Size = new System.Drawing.Size(114, 61);
             this.Feb.TabIndex = 3;
             this.Feb.Text = "Feb";
             this.Feb.UseVisualStyleBackColor = true;
@@ -72,9 +74,10 @@
             // 
             // Mar
             // 
-            this.Mar.Location = new System.Drawing.Point(395, 168);
+            this.Mar.Location = new System.Drawing.Point(444, 210);
+            this.Mar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Mar.Name = "Mar";
-            this.Mar.Size = new System.Drawing.Size(101, 49);
+            this.Mar.Size = new System.Drawing.Size(114, 61);
             this.Mar.TabIndex = 4;
             this.Mar.Text = "Mar";
             this.Mar.UseVisualStyleBackColor = true;
@@ -82,9 +85,10 @@
             // 
             // Apr
             // 
-            this.Apr.Location = new System.Drawing.Point(545, 168);
+            this.Apr.Location = new System.Drawing.Point(613, 210);
+            this.Apr.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Apr.Name = "Apr";
-            this.Apr.Size = new System.Drawing.Size(101, 49);
+            this.Apr.Size = new System.Drawing.Size(114, 61);
             this.Apr.TabIndex = 5;
             this.Apr.Text = "Apr";
             this.Apr.UseVisualStyleBackColor = true;
@@ -92,9 +96,10 @@
             // 
             // May
             // 
-            this.May.Location = new System.Drawing.Point(76, 254);
+            this.May.Location = new System.Drawing.Point(86, 318);
+            this.May.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.May.Name = "May";
-            this.May.Size = new System.Drawing.Size(101, 49);
+            this.May.Size = new System.Drawing.Size(114, 61);
             this.May.TabIndex = 6;
             this.May.Text = "May";
             this.May.UseVisualStyleBackColor = true;
@@ -102,9 +107,10 @@
             // 
             // Jun
             // 
-            this.Jun.Location = new System.Drawing.Point(223, 254);
+            this.Jun.Location = new System.Drawing.Point(251, 318);
+            this.Jun.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Jun.Name = "Jun";
-            this.Jun.Size = new System.Drawing.Size(101, 49);
+            this.Jun.Size = new System.Drawing.Size(114, 61);
             this.Jun.TabIndex = 7;
             this.Jun.Text = "Jun";
             this.Jun.UseVisualStyleBackColor = true;
@@ -112,9 +118,10 @@
             // 
             // Jul
             // 
-            this.Jul.Location = new System.Drawing.Point(395, 254);
+            this.Jul.Location = new System.Drawing.Point(444, 318);
+            this.Jul.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Jul.Name = "Jul";
-            this.Jul.Size = new System.Drawing.Size(101, 49);
+            this.Jul.Size = new System.Drawing.Size(114, 61);
             this.Jul.TabIndex = 8;
             this.Jul.Text = "Jul";
             this.Jul.UseVisualStyleBackColor = true;
@@ -122,9 +129,10 @@
             // 
             // Aug
             // 
-            this.Aug.Location = new System.Drawing.Point(545, 244);
+            this.Aug.Location = new System.Drawing.Point(613, 305);
+            this.Aug.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Aug.Name = "Aug";
-            this.Aug.Size = new System.Drawing.Size(101, 49);
+            this.Aug.Size = new System.Drawing.Size(114, 61);
             this.Aug.TabIndex = 9;
             this.Aug.Text = "Aug";
             this.Aug.UseVisualStyleBackColor = true;
@@ -132,9 +140,10 @@
             // 
             // Sep
             // 
-            this.Sep.Location = new System.Drawing.Point(76, 335);
+            this.Sep.Location = new System.Drawing.Point(86, 419);
+            this.Sep.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Sep.Name = "Sep";
-            this.Sep.Size = new System.Drawing.Size(101, 49);
+            this.Sep.Size = new System.Drawing.Size(114, 61);
             this.Sep.TabIndex = 10;
             this.Sep.Text = "Sep";
             this.Sep.UseVisualStyleBackColor = true;
@@ -142,9 +151,10 @@
             // 
             // Oct
             // 
-            this.Oct.Location = new System.Drawing.Point(223, 335);
+            this.Oct.Location = new System.Drawing.Point(251, 419);
+            this.Oct.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Oct.Name = "Oct";
-            this.Oct.Size = new System.Drawing.Size(101, 49);
+            this.Oct.Size = new System.Drawing.Size(114, 61);
             this.Oct.TabIndex = 11;
             this.Oct.Text = "Oct";
             this.Oct.UseVisualStyleBackColor = true;
@@ -152,9 +162,10 @@
             // 
             // Nov
             // 
-            this.Nov.Location = new System.Drawing.Point(395, 335);
+            this.Nov.Location = new System.Drawing.Point(444, 419);
+            this.Nov.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Nov.Name = "Nov";
-            this.Nov.Size = new System.Drawing.Size(101, 49);
+            this.Nov.Size = new System.Drawing.Size(114, 61);
             this.Nov.TabIndex = 12;
             this.Nov.Text = "Nov";
             this.Nov.UseVisualStyleBackColor = true;
@@ -162,9 +173,10 @@
             // 
             // Dec
             // 
-            this.Dec.Location = new System.Drawing.Point(545, 335);
+            this.Dec.Location = new System.Drawing.Point(613, 419);
+            this.Dec.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Dec.Name = "Dec";
-            this.Dec.Size = new System.Drawing.Size(101, 49);
+            this.Dec.Size = new System.Drawing.Size(114, 61);
             this.Dec.TabIndex = 13;
             this.Dec.Text = "Dec";
             this.Dec.UseVisualStyleBackColor = true;
@@ -172,28 +184,32 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.Gainsboro;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.CustomBC = System.Drawing.Color.LightGray;
+            this.label1.CustomTC = System.Drawing.Color.DimGray;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(373, 67);
+            this.label1.Location = new System.Drawing.Point(420, 84);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(186, 58);
+            this.label1.Size = new System.Drawing.Size(209, 72);
             this.label1.TabIndex = 14;
             this.label1.Text = "year 2024";
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.InactiveCaption;
-            this.dateTimePicker1.Location = new System.Drawing.Point(682, 115);
+            this.dateTimePicker1.Location = new System.Drawing.Point(767, 144);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(224, 26);
             this.dateTimePicker1.TabIndex = 15;
             // 
             // start
             // 
-            this.start.Location = new System.Drawing.Point(698, 348);
+            this.start.Location = new System.Drawing.Point(785, 435);
+            this.start.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.start.Name = "start";
-            this.start.Size = new System.Drawing.Size(75, 23);
+            this.start.Size = new System.Drawing.Size(84, 29);
             this.start.TabIndex = 16;
             this.start.Text = "start";
             this.start.UseVisualStyleBackColor = true;
@@ -201,9 +217,10 @@
             // 
             // stop
             // 
-            this.stop.Location = new System.Drawing.Point(807, 348);
+            this.stop.Location = new System.Drawing.Point(908, 435);
+            this.stop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.stop.Name = "stop";
-            this.stop.Size = new System.Drawing.Size(75, 23);
+            this.stop.Size = new System.Drawing.Size(84, 29);
             this.stop.TabIndex = 17;
             this.stop.Text = "stop";
             this.stop.UseVisualStyleBackColor = true;
@@ -217,20 +234,19 @@
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(695, 300);
+            this.label2.Location = new System.Drawing.Point(782, 375);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(187, 28);
+            this.label2.Size = new System.Drawing.Size(210, 35);
             this.label2.TabIndex = 18;
             this.label2.Text = "label2";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::planner.Properties.Resources.image_prject;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1014, 570);
+            this.ClientSize = new System.Drawing.Size(1141, 712);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.stop);
             this.Controls.Add(this.start);
@@ -248,6 +264,7 @@
             this.Controls.Add(this.Mar);
             this.Controls.Add(this.Feb);
             this.Controls.Add(this.Jan);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load_1);
@@ -269,7 +286,7 @@
         private System.Windows.Forms.Button Oct;
         private System.Windows.Forms.Button Nov;
         private System.Windows.Forms.Button Dec;
-        private System.Windows.Forms.Label label1;
+        private planner.RoundLabel label1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button start;
         private System.Windows.Forms.Button stop;
