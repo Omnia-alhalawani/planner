@@ -62,6 +62,7 @@ namespace planner
                 {
 
                     MessageBox.Show("اشطر كتكوت");
+                    listBox6.Items.Add(listBox1.SelectedItem);
                     listBox1.Items.Remove(listBox1.SelectedItem);
                 }
                 else
@@ -92,7 +93,8 @@ namespace planner
                 {
 
                     MessageBox.Show("اشطر كتكوت");
-                    listBox1.Items.Remove(listBox1.SelectedItem);
+                    listBox6.Items.Add(listBox2.SelectedItem);
+                    listBox2.Items.Remove(listBox2.SelectedItem);
                 }
                 else
                 {
@@ -118,7 +120,7 @@ namespace planner
 
         private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (listBox2.SelectedItem != null)
+            if (listBox3.SelectedItem != null)
             {
 
                 DialogResult result = MessageBox.Show("Did you finish the task?", "Confirmation", MessageBoxButtons.YesNo);
@@ -128,7 +130,8 @@ namespace planner
                 {
 
                     MessageBox.Show("اشطر كتكوت");
-                    listBox2.Items.Remove(listBox2.SelectedItem);
+                    listBox7.Items.Add(listBox3.SelectedItem);
+                    listBox3.Items.Remove(listBox3.SelectedItem);
                 }
                 else
                 {
@@ -164,6 +167,7 @@ namespace planner
                 {
 
                     MessageBox.Show("اشطر كتكوت");
+                    listBox6.Items.Add(listBox4.SelectedItem);
                     listBox4.Items.Remove(listBox4.SelectedItem);
                 }
                 else
@@ -189,6 +193,26 @@ namespace planner
         }
 
         private void notes_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox6_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox7_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox8_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

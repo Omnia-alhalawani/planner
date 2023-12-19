@@ -106,6 +106,14 @@ namespace planner
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.label_Month = new planner.RoundLabel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.listBox5 = new System.Windows.Forms.ListBox();
+            this.listBox6 = new System.Windows.Forms.ListBox();
+            this.listBox7 = new System.Windows.Forms.ListBox();
+            this.listBox8 = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             this.week1.SuspendLayout();
             this.week2.SuspendLayout();
@@ -177,6 +185,8 @@ namespace planner
             // 
             // week1
             // 
+            this.week1.Controls.Add(this.listBox6);
+            this.week1.Controls.Add(this.label3);
             this.week1.Controls.Add(this.listBox1);
             this.week1.Controls.Add(this.textBox1);
             this.week1.Controls.Add(this.button1);
@@ -197,9 +207,9 @@ namespace planner
             this.listBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 24;
-            this.listBox1.Location = new System.Drawing.Point(19, 96);
+            this.listBox1.Location = new System.Drawing.Point(20, 94);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(212, 364);
+            this.listBox1.Size = new System.Drawing.Size(212, 148);
             this.listBox1.TabIndex = 0;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -226,6 +236,8 @@ namespace planner
             // 
             // week2
             // 
+            this.week2.Controls.Add(this.listBox5);
+            this.week2.Controls.Add(this.label2);
             this.week2.Controls.Add(this.listBox2);
             this.week2.Controls.Add(this.textBox2);
             this.week2.Controls.Add(this.button2);
@@ -248,7 +260,7 @@ namespace planner
             this.listBox2.ItemHeight = 24;
             this.listBox2.Location = new System.Drawing.Point(19, 94);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(212, 364);
+            this.listBox2.Size = new System.Drawing.Size(212, 148);
             this.listBox2.TabIndex = 1;
             this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
             // 
@@ -275,6 +287,8 @@ namespace planner
             // 
             // week3
             // 
+            this.week3.Controls.Add(this.listBox7);
+            this.week3.Controls.Add(this.label4);
             this.week3.Controls.Add(this.listBox3);
             this.week3.Controls.Add(this.textBox3);
             this.week3.Controls.Add(this.button3);
@@ -297,7 +311,7 @@ namespace planner
             this.listBox3.ItemHeight = 24;
             this.listBox3.Location = new System.Drawing.Point(19, 99);
             this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(212, 364);
+            this.listBox3.Size = new System.Drawing.Size(212, 148);
             this.listBox3.TabIndex = 1;
             this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
             // 
@@ -324,6 +338,8 @@ namespace planner
             // 
             // week4
             // 
+            this.week4.Controls.Add(this.listBox8);
+            this.week4.Controls.Add(this.label5);
             this.week4.Controls.Add(this.listBox4);
             this.week4.Controls.Add(this.textBox4);
             this.week4.Controls.Add(this.button4);
@@ -346,7 +362,7 @@ namespace planner
             this.listBox4.ItemHeight = 24;
             this.listBox4.Location = new System.Drawing.Point(19, 99);
             this.listBox4.Name = "listBox4";
-            this.listBox4.Size = new System.Drawing.Size(212, 364);
+            this.listBox4.Size = new System.Drawing.Size(212, 148);
             this.listBox4.TabIndex = 1;
             this.listBox4.SelectedIndexChanged += new System.EventHandler(this.listBox4_SelectedIndexChanged);
             // 
@@ -384,6 +400,82 @@ namespace planner
             this.label_Month.TabIndex = 0;
             this.label_Month.Text = "January";
             this.label_Month.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(72, 254);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(105, 24);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "ended task";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(71, 254);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(105, 24);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "ended task";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(74, 254);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(105, 24);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "ended task";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(75, 254);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(105, 24);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "ended task";
+            // 
+            // listBox5
+            // 
+            this.listBox5.FormattingEnabled = true;
+            this.listBox5.ItemHeight = 24;
+            this.listBox5.Location = new System.Drawing.Point(19, 308);
+            this.listBox5.Name = "listBox5";
+            this.listBox5.Size = new System.Drawing.Size(212, 148);
+            this.listBox5.TabIndex = 5;
+            this.listBox5.SelectedIndexChanged += new System.EventHandler(this.listBox5_SelectedIndexChanged);
+            // 
+            // listBox6
+            // 
+            this.listBox6.FormattingEnabled = true;
+            this.listBox6.ItemHeight = 24;
+            this.listBox6.Location = new System.Drawing.Point(20, 308);
+            this.listBox6.Name = "listBox6";
+            this.listBox6.Size = new System.Drawing.Size(212, 148);
+            this.listBox6.TabIndex = 6;
+            this.listBox6.SelectedIndexChanged += new System.EventHandler(this.listBox6_SelectedIndexChanged);
+            // 
+            // listBox7
+            // 
+            this.listBox7.FormattingEnabled = true;
+            this.listBox7.ItemHeight = 24;
+            this.listBox7.Location = new System.Drawing.Point(19, 308);
+            this.listBox7.Name = "listBox7";
+            this.listBox7.Size = new System.Drawing.Size(212, 148);
+            this.listBox7.TabIndex = 7;
+            this.listBox7.SelectedIndexChanged += new System.EventHandler(this.listBox7_SelectedIndexChanged);
+            // 
+            // listBox8
+            // 
+            this.listBox8.FormattingEnabled = true;
+            this.listBox8.ItemHeight = 24;
+            this.listBox8.Location = new System.Drawing.Point(19, 308);
+            this.listBox8.Name = "listBox8";
+            this.listBox8.Size = new System.Drawing.Size(212, 148);
+            this.listBox8.TabIndex = 6;
+            this.listBox8.SelectedIndexChanged += new System.EventHandler(this.listBox8_SelectedIndexChanged);
             // 
             // Form2
             // 
@@ -435,5 +527,13 @@ namespace planner
         private ListBox listBox4;
         private TextBox textBox4;
         private Button button4;
+        private Label label3;
+        private Label label2;
+        private Label label4;
+        private Label label5;
+        private ListBox listBox6;
+        private ListBox listBox5;
+        private ListBox listBox7;
+        private ListBox listBox8;
     }
 }
