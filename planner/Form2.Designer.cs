@@ -196,7 +196,7 @@ namespace planner
             this.week1.Margin = new System.Windows.Forms.Padding(4);
             this.week1.Name = "week1";
             this.week1.Padding = new System.Windows.Forms.Padding(4);
-            this.week1.Size = new System.Drawing.Size(209, 531);
+            this.week1.Size = new System.Drawing.Size(219, 531);
             this.week1.TabIndex = 0;
             this.week1.TabStop = false;
             this.week1.Text = "Week 1";
@@ -207,7 +207,7 @@ namespace planner
             this.listBox6.ItemHeight = 24;
             this.listBox6.Location = new System.Drawing.Point(20, 308);
             this.listBox6.Name = "listBox6";
-            this.listBox6.Size = new System.Drawing.Size(167, 172);
+            this.listBox6.Size = new System.Drawing.Size(182, 172);
             this.listBox6.TabIndex = 6;
             this.listBox6.SelectedIndexChanged += new System.EventHandler(this.listBox6_SelectedIndexChanged);
             // 
@@ -235,9 +235,9 @@ namespace planner
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.textBox1.Location = new System.Drawing.Point(7, 32);
+            this.textBox1.Location = new System.Drawing.Point(20, 32);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(142, 32);
+            this.textBox1.Size = new System.Drawing.Size(129, 32);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -245,7 +245,7 @@ namespace planner
             // 
             this.button1.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.button1.ForeColor = System.Drawing.Color.RosyBrown;
-            this.button1.Location = new System.Drawing.Point(155, 31);
+            this.button1.Location = new System.Drawing.Point(155, 32);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(60, 31);
             this.button1.TabIndex = 0;
@@ -266,7 +266,7 @@ namespace planner
             this.week2.Margin = new System.Windows.Forms.Padding(4);
             this.week2.Name = "week2";
             this.week2.Padding = new System.Windows.Forms.Padding(4);
-            this.week2.Size = new System.Drawing.Size(207, 531);
+            this.week2.Size = new System.Drawing.Size(214, 531);
             this.week2.TabIndex = 1;
             this.week2.TabStop = false;
             this.week2.Text = "Week 2";
@@ -305,9 +305,9 @@ namespace planner
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.textBox2.Location = new System.Drawing.Point(7, 30);
+            this.textBox2.Location = new System.Drawing.Point(19, 36);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 32);
+            this.textBox2.Size = new System.Drawing.Size(123, 32);
             this.textBox2.TabIndex = 2;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged_1);
             // 
@@ -315,7 +315,7 @@ namespace planner
             // 
             this.button2.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.button2.ForeColor = System.Drawing.Color.RosyBrown;
-            this.button2.Location = new System.Drawing.Point(161, 33);
+            this.button2.Location = new System.Drawing.Point(148, 35);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(60, 31);
             this.button2.TabIndex = 3;
@@ -347,7 +347,7 @@ namespace planner
             this.listBox7.ItemHeight = 24;
             this.listBox7.Location = new System.Drawing.Point(19, 308);
             this.listBox7.Name = "listBox7";
-            this.listBox7.Size = new System.Drawing.Size(183, 148);
+            this.listBox7.Size = new System.Drawing.Size(183, 172);
             this.listBox7.TabIndex = 7;
             this.listBox7.SelectedIndexChanged += new System.EventHandler(this.listBox7_SelectedIndexChanged);
             // 
@@ -375,9 +375,9 @@ namespace planner
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.textBox3.Location = new System.Drawing.Point(9, 35);
+            this.textBox3.Location = new System.Drawing.Point(19, 35);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(136, 32);
+            this.textBox3.Size = new System.Drawing.Size(126, 32);
             this.textBox3.TabIndex = 2;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
@@ -417,7 +417,7 @@ namespace planner
             this.listBox8.ItemHeight = 24;
             this.listBox8.Location = new System.Drawing.Point(19, 308);
             this.listBox8.Name = "listBox8";
-            this.listBox8.Size = new System.Drawing.Size(190, 148);
+            this.listBox8.Size = new System.Drawing.Size(190, 172);
             this.listBox8.TabIndex = 6;
             this.listBox8.SelectedIndexChanged += new System.EventHandler(this.listBox8_SelectedIndexChanged);
             // 
@@ -445,9 +445,9 @@ namespace planner
             // textBox4
             // 
             this.textBox4.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.textBox4.Location = new System.Drawing.Point(7, 35);
+            this.textBox4.Location = new System.Drawing.Point(19, 35);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(158, 32);
+            this.textBox4.Size = new System.Drawing.Size(129, 32);
             this.textBox4.TabIndex = 2;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
@@ -455,7 +455,7 @@ namespace planner
             // 
             this.button4.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.button4.ForeColor = System.Drawing.Color.RosyBrown;
-            this.button4.Location = new System.Drawing.Point(186, 35);
+            this.button4.Location = new System.Drawing.Point(154, 37);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(60, 31);
             this.button4.TabIndex = 3;
