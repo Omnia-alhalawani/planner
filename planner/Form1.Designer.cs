@@ -41,12 +41,13 @@
             this.Oct = new System.Windows.Forms.Button();
             this.Nov = new System.Windows.Forms.Button();
             this.Dec = new System.Windows.Forms.Button();
-            this.label1 = new planner.RoundLabel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.start = new System.Windows.Forms.Button();
             this.stop = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new planner.RoundLabel();
             this.SuspendLayout();
             // 
             // Jan
@@ -129,7 +130,7 @@
             // 
             // Aug
             // 
-            this.Aug.Location = new System.Drawing.Point(613, 305);
+            this.Aug.Location = new System.Drawing.Point(613, 318);
             this.Aug.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Aug.Name = "Aug";
             this.Aug.Size = new System.Drawing.Size(114, 61);
@@ -182,19 +183,6 @@
             this.Dec.UseVisualStyleBackColor = true;
             this.Dec.Click += new System.EventHandler(this.Dec_Click);
             // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.CustomBC = System.Drawing.Color.LightGray;
-            this.label1.CustomTC = System.Drawing.Color.DimGray;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(420, 84);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(209, 72);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "year 2024";
-            // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.InactiveCaption;
@@ -240,6 +228,32 @@
             this.label2.TabIndex = 18;
             this.label2.Text = "label2";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Honeydew;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(798, 572);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(194, 57);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Notepad";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.CustomBC = System.Drawing.Color.LightGray;
+            this.label1.CustomTC = System.Drawing.Color.DimGray;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label1.Location = new System.Drawing.Point(420, 84);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(209, 72);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "year 2024";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -247,6 +261,7 @@
             this.BackgroundImage = global::planner.Properties.Resources.image_prject;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1141, 712);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.stop);
             this.Controls.Add(this.start);
@@ -266,7 +281,7 @@
             this.Controls.Add(this.Jan);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Notepad";
             this.Load += new System.EventHandler(this.Form1_Load_1);
             this.ResumeLayout(false);
 
@@ -292,6 +307,7 @@
         private System.Windows.Forms.Button stop;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

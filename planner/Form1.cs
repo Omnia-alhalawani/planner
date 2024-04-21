@@ -140,5 +140,11 @@ namespace planner
         {
             m.Stop();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            NotePad nt = new NotePad();
+            nt.Show();
+        }
     }
 }
