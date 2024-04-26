@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace planner
 {
@@ -28,14 +30,11 @@ namespace planner
             label_month.Size = new Size(200, 60);
             label_month.TabIndex = 0;
             label_month.Text = month;
-            label_month.TextAlign = ContentAlignment.MiddleCenter;
         }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        StreamReader sr;
+        StreamWriter sw;
+        string filename = @"C:\Users\sama3\OneDrive\Desktop\taskmanager.txt";
+        FileStream fs;
 
         private void back_btn_Click(object sender, EventArgs e)
         {
@@ -45,12 +44,6 @@ namespace planner
             //close form 2 &show form 1 
 
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(textBox1.Text))
@@ -58,12 +51,21 @@ namespace planner
                 listBox1.Items.Add(textBox1.Text);
                 textBox1.Text = "";
             }
+            //I don't know where to add this code
+            fs = new FileStream(filename, FileMode.OpenOrCreate, FileAccess.ReadWrite);
+            sw = new StreamWriter(fs);
+            sr = new StreamReader(fs);
+            fs.Seek(0, SeekOrigin.End);
+            for (int index = 0; index < listBox1.Items.Count; index++)
+            {
+                string record = listBox1.Items[index].ToString();
+                sw.WriteLine(record);
+            }
+            sw.Close();
+            fs.Close();
+            MessageBox.Show("Task added.");
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
         private void listBox1_doubleclick(object sender, EventArgs e)
         {
             if (listBox1.SelectedItem != null)
@@ -118,11 +120,6 @@ namespace planner
             }
         }
 
-        private void textBox2_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(textBox2.Text))
@@ -154,12 +151,6 @@ namespace planner
                 }
             }
         }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(textBox3.Text))
@@ -192,11 +183,6 @@ namespace planner
             }
         }
 
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button4_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(textBox4.Text))
@@ -204,36 +190,6 @@ namespace planner
                 listBox4.Items.Add(textBox4.Text);
                 textBox4.Text = "";
             }
-        }
-
-        private void notes_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox6_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox5_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox7_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox8_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void week4_Enter(object sender, EventArgs e)
-        {
-
         }
     }
 }

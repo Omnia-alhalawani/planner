@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace planner
 {
@@ -23,8 +24,10 @@ namespace planner
 
         private void Form1_Load(object sender, EventArgs e)
         {
-         
-        
+
+            FileStream fs;
+            StreamWriter sw;
+            string filename;
         }
 
         private void Jan_Click(object sender, EventArgs e)//to form 2
@@ -34,6 +37,7 @@ namespace planner
             //form2.Show();
             Form2 formjan = new Form2("January");
             formjan.ShowDialog();
+            
         }
 
         private void Feb_Click(object sender, EventArgs e)

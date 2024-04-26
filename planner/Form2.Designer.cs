@@ -170,7 +170,6 @@ namespace planner
             this.notes.Name = "notes";
             this.notes.Size = new System.Drawing.Size(223, 608);
             this.notes.TabIndex = 5;
-            this.notes.TextChanged += new System.EventHandler(this.notes_TextChanged);
             // 
             // week1
             // 
@@ -199,7 +198,6 @@ namespace planner
             this.listBox6.Name = "listBox6";
             this.listBox6.Size = new System.Drawing.Size(204, 207);
             this.listBox6.TabIndex = 6;
-            this.listBox6.SelectedIndexChanged += new System.EventHandler(this.listBox6_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -221,7 +219,6 @@ namespace planner
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(187, 178);
             this.listBox1.TabIndex = 0;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // textBox1
             // 
@@ -231,7 +228,6 @@ namespace planner
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(145, 37);
             this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button1
             // 
@@ -273,7 +269,6 @@ namespace planner
             this.listBox5.Name = "listBox5";
             this.listBox5.Size = new System.Drawing.Size(193, 207);
             this.listBox5.TabIndex = 5;
-            this.listBox5.SelectedIndexChanged += new System.EventHandler(this.listBox5_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -305,7 +300,6 @@ namespace planner
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(138, 37);
             this.textBox2.TabIndex = 2;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged_1);
             // 
             // button2
             // 
@@ -347,7 +341,6 @@ namespace planner
             this.listBox7.Name = "listBox7";
             this.listBox7.Size = new System.Drawing.Size(205, 207);
             this.listBox7.TabIndex = 7;
-            this.listBox7.SelectedIndexChanged += new System.EventHandler(this.listBox7_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -379,7 +372,6 @@ namespace planner
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(141, 37);
             this.textBox3.TabIndex = 2;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // button3
             // 
@@ -411,7 +403,6 @@ namespace planner
             this.week4.TabIndex = 3;
             this.week4.TabStop = false;
             this.week4.Text = "Week 4";
-            this.week4.Enter += new System.EventHandler(this.week4_Enter);
             // 
             // listBox8
             // 
@@ -422,7 +413,6 @@ namespace planner
             this.listBox8.Name = "listBox8";
             this.listBox8.Size = new System.Drawing.Size(213, 207);
             this.listBox8.TabIndex = 6;
-            this.listBox8.SelectedIndexChanged += new System.EventHandler(this.listBox8_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -454,7 +444,6 @@ namespace planner
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(145, 37);
             this.textBox4.TabIndex = 2;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // button4
             // 
